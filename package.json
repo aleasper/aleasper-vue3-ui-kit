@@ -1,11 +1,14 @@
 {
   "name": "aleasper-vue3-ui-kit",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-packages": "npm run build:lib",
+    "build:lib": "vue-cli-service build --target lib --name aleasper-vue3-ui-kit 'src/main.ts'",
+    "build:wc": "vue-cli-service build --target wc --name aleasper-vue3-ui-kit 'src/components/*.vue'"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -22,6 +25,10 @@
     "@vue/eslint-config-typescript": "^7.0.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0",
+    "sass": "^1.43.2",
+    "sass-loader": "^10.2.0",
     "typescript": "~4.1.5"
-  }
+  },
+  "main": "dist/aleasper-vue3-ui-kit.common.js",
+  "license": "MIT"
 }
