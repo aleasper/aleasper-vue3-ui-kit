@@ -2,6 +2,7 @@
   "name": "aleasper-vue3-ui-kit",
   "version": "0.1.0",
   "private": false,
+  "repository": "https://github.com/aleasper/aleasper-vue3-ui-kit",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
